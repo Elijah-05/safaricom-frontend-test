@@ -5,11 +5,29 @@ import Link from "next/link";
 export default function LoginPage() {
   return (
     <div className="bg-[#f2f4f7]">
-
       <div className="sticky top-0 w-full bg-primary p-3 flex items-center justify-between">
-        <div className="text-white font-bold text-lg space-x-4">
-          <Link href="/">M-PESA</Link>
-          <Link href="/">Safaricom</Link>
+        <div className="flex items-center text-white font-bold text-lg space-x-2">
+          <Link href="/">
+            <Image
+              src="/images/mpesa-logo.png"
+              alt="icons"
+              width={90}
+              height={40}
+              priority={false}
+              className=""
+            />
+          </Link>
+          <div className="h-5 w-px grow bg-white" />
+          <Link href="/">
+            <Image
+              src="/images/safaricom-logo.png"
+              alt="icons"
+              width={90}
+              height={40}
+              priority={false}
+              className=""
+            />
+          </Link>
         </div>
         <div className="flex items-center gap-2 font-bold text-white">
           <button type="button" className="max-sm:hidden uppercase mr-2">
